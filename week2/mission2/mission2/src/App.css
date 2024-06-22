@@ -1,0 +1,58 @@
+.app {
+  text-align: center;
+  padding: 20px;
+  background-color: #1E2340;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie-card {
+  position: relative;
+  width: 200px;
+  margin: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #3D4573;
+  color: #fff;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-info {
+  padding: 10px;
+  text-align: left;
+}
+
+.movie-info h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.movie-info p {
+  margin: 5px 0;
+}
+
+.movie-description {
+  display: none;
+}
+
+.movie-card:hover .movie-description {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 20px;
+  text-align: left;
+}
